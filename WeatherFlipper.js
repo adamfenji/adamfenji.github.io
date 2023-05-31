@@ -55,7 +55,7 @@ function theme(){
             mouseControls: true,
             touchControls: true,
             gyroControls: true,
-            minHeight: 600.00,
+            minHeight: 700.00,
             minWidth: 150.00,
             skyColor: 0x0,
             cloudShadowColor: 0x0,
@@ -77,7 +77,7 @@ function theme(){
             touchControls: true,
             gyroControls: true,
         minWidth: 150.00,
-            minHeight: 600,
+            minHeight: 700,
             })
     }
 }
@@ -139,7 +139,7 @@ searchButton.addEventListener("click", () => {
     checkWeather();
     setTimeout(() => {
         theme();
-    }, 1000);
+    }, 1250);
     
 });
 
