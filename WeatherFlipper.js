@@ -70,8 +70,8 @@ function theme(){
             mouseControls: true,
             touchControls: true,
             gyroControls: true,
-            minHeight: windowHeight - 20,
-            minWidth: windowWidth - 15,
+            minHeight: windowHeight,
+            minWidth: windowWidth,
             skyColor: 0x0,
             cloudShadowColor: 0x0,
             sunColor: 0xf7f7f7,
@@ -91,8 +91,8 @@ function theme(){
             mouseControls: true,
             touchControls: true,
             gyroControls: true,
-            minHeight: windowHeight - 20,
-            minWidth: windowWidth - 15,
+            minHeight: windowHeight,
+            minWidth: windowWidth,
             })
     }
 }
