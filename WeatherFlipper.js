@@ -57,6 +57,7 @@ function theme(){
     // Get the width and height of the window
     let windowWidth = window.innerWidth;
     let windowHeight = window.innerHeight;
+    document.body.style.overflow = "hidden";
     if(7 > hourValue.innerHTML || hourValue.innerHTML > 19){
         dateContainer.setAttribute("class", "dateContainerDark"); 
         hourDisplay.setAttribute("class", "hourDisplayDark");
