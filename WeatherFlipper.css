@@ -3,6 +3,7 @@
     body{
         font-family: 'Bebas Neue', sans-serif;
         background-color: #ffffffd0;
+        margin: 0;
     }
     
     #cityTemp{
@@ -207,6 +208,7 @@
     body{
         font-family: 'Bebas Neue', sans-serif;
         background-color: #ffffffd0;
+        margin: 0;
     }
     
     #cityTemp{
@@ -222,7 +224,6 @@
     navbar{
         display: flex;
         justify-content: center;
-        margin: 10px 0 10px 0;
     }
     #searchButton {
         margin: 0.5em;
@@ -406,6 +407,7 @@
     body{
         font-family: 'Bebas Neue', sans-serif;
         background-color: #ffffffd0;
+        margin: 0;
     }
     
     #cityTemp{
@@ -421,7 +423,6 @@
     navbar{
         display: flex;
         justify-content: center;
-        margin: 10px 0 10px 0;
     }
     #searchButton {
         margin: 0.5em;
@@ -596,6 +597,3 @@
     }
     
 }
-
-
-
