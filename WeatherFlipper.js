@@ -30,6 +30,15 @@ function update(){
     hourValue.innerText = relocated.c.hour;
     minValue.innerText = date.getMinutes();
     dateValue.innerText = datePrint();
+
+    if(hourValue.innerText.length == 1){
+        let temp = hourValue.innerText;
+        hourValue.innerText = "0" + temp;
+    }
+    if(minValue.innerText.length == 1){
+        let temp = minValue.innerText;
+        minValue.innerText = "0" + temp;
+    }
 }
 
 //Accessing the styling elements of the page
@@ -40,10 +49,15 @@ let searchButton = document.querySelector("#searchButton");
 let searchBar = document.querySelector("#searchBar");
 let pageIcon = document.querySelector("#pageIcon");
 
+
+
 //This method is used to switch from Night Mode into Ligth mode, vise versa
 function theme(){
 
-    if(hourValue.innerHTML > 19){
+    // Get the width and height of the window
+    let windowWidth = window.innerWidth;
+    let windowHeight = window.innerHeight;
+    if(7 > hourValue.innerHTML || hourValue.innerHTML > 19){
         dateContainer.setAttribute("class", "dateContainerDark"); 
         hourDisplay.setAttribute("class", "hourDisplayDark");
         minDisplay.setAttribute("class", "minDisplayDark");
@@ -55,8 +69,8 @@ function theme(){
             mouseControls: true,
             touchControls: true,
             gyroControls: true,
-            minHeight: 700.00,
-            minWidth: 150.00,
+            minHeight: windowHeight - 20,
+            minWidth: windowWidth - 15,
             skyColor: 0x0,
             cloudShadowColor: 0x0,
             sunColor: 0xf7f7f7,
@@ -76,8 +90,8 @@ function theme(){
             mouseControls: true,
             touchControls: true,
             gyroControls: true,
-        minWidth: 150.00,
-            minHeight: 700,
+            minHeight: windowHeight - 20,
+            minWidth: windowWidth - 15,
             })
     }
 }
@@ -139,7 +153,7 @@ searchButton.addEventListener("click", () => {
     checkWeather();
     setTimeout(() => {
         theme();
-    }, 1250);
+    }, 1500);
     
 });
 
@@ -160,5 +174,3 @@ update();
 setInterval(update, 1000);
 checkWeather();
 theme();
-
-
