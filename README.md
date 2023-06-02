@@ -1,1 +1,3 @@
+[Weather Flipper](https://adamfenji.github.io/weatherflipper.github.io/)
+
 WeatherFlipper is a web project that combines an international flip clock with a dynamic weather application. Built using HTML, CSS, JavaScript, and VantaJS, this website provides users with an interactive and visually appealing way to check the time and weather based on their location. The flip clock displays the time in a unique and stylish manner, while the weather app fetches real-time weather data and updates accordingly. Explore the world while staying informed about the current weather conditions with WeatherFlipper.
